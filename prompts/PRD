@@ -1,0 +1,43 @@
+Context:
+    I have my shares and stock investments consolidated report for each month in PDF format. 
+    Few samples of these reports are stored in the samples\cdsl_ecas folder in this project.  
+    These consolidated report includes both the stocks i have directly invested in.
+    and also the mutual funds i have directly invested in.  
+    I have few samples that are unprotected for initial analysis.
+    Generally these are password protected files.  
+    The files are with the naming convention YYYYMM_CDSL_CAS*.pdf.  
+    The files are named based on the month and year the report belongs to. 
+    The YYYY is the year part and the MM is the month part.
+    I also have few samples of the reports sent by the mutual fund companies month on month about
+    the stocks they had invested in and the investment positions. 
+
+
+What I want to achieve:
+    - store the details of the stocks investment directly by me.
+    - store the details of the mutual funds investment directly by me.
+    - These mutual funds invest in stocks. 
+    - So, store the shares, the mutual funds invested in as well.
+    - This should enable to get a consolidated view of the overall exposure I have to a particular  company's stock.  
+    - Enable to do this analytics every month and be able to compare the trend across months.  
+    - I want to store the details into a local postgresql database for data privacy reasons. 
+    - Generate the reports using the Python AI/ML or Visualisation libraries or MS365 PowerBI
+    - Create the complete program in python in this project 
+    - But first, lets identify all the various tasks to perform to achieve the overall goal and the break it into high level phase-wise goals with correct sequencing 
+    - Store the output into a file so i can review and amend to generate PRDs
+    - Once the PRDs are reviewed and amended by me, we can step into the code development process 
+    - Both the consolidated report and the mutual fund investment statements come to me via email.
+    - At a later phase, we need to connect to Gmail and Rediffmail to get these report and statements so the complete flow is automated without human intervention
+
+Coding Standards:
+    - All the code should be written in Python programming language 
+    - Follow the SOLID principles 
+    - Follow design patterns and all the software engineering best practices
+    - Follow all the software engineering best practices applicable to enable agility, performance, scalability, repeatability, auditability, traceability and maintainability 
+    - While planning for each phase-wise tasks, lets bring in these aspects
+    - Reporting can use python libraries like scikit learn and seaborn kind of python visualisation tools to provide good visual effects to the reports
+
+    
+
+
+
+
