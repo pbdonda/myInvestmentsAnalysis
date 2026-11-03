@@ -64,8 +64,8 @@ Observed variations:
 - Column order differs (Nippon has ISIN before the name; others have name first).
 - Weight column is named "% to Net Assets", "% to AUM", or "% to NAV".
 - Weight units (corrected by W4a, 2026-11-03; confirmed by each workbook's GRAND TOTAL row):
-  - **Fractions** (grand total 1.0): Axis Midcap, Axis Small Cap, Mirae EB, IO, PF (PF inferred; its grand total row was not located), Nippon GF, SC, TS.
-  - **Percentages** (grand total 100): Canara Robeco EQ, IN; Invesco CF, GF; SBI Contra, Healthcare Opportunities, Small Cap.
+  - **Fractions** (grand total 1.0): Axis Midcap, Axis Small Cap, Mirae EB, IO, PF (confirmed on 2026-11-04: grand total row 197 = 1), Nippon GF, SC, TS.
+  - **Percentages** (grand total 100): Canara Robeco EQ, IN; Invesco CF, GF; SBI Contra (confirmed 2026-11-04; calculated %s from values are used, printed %s kept as raw, because equity and net receivables differ by about 0.04 points and offset each other), SBI Healthcare Opportunities; SBI Small Cap (not yet checked section by section).
   - The earlier statement that only Mirae uses fractions was wrong.
 - Value unit is Rs. lakhs (named "Lakhs" or "Lacs"; Canara and Nippon use "Lacs").
 - Sheets with trailing empty columns: Mirae (255 wide, 8 used), Invesco CF (256 wide, 8 used), SBI (256 wide, 10–11 used).
@@ -113,6 +113,8 @@ Observed variations:
 
 ### W5 – Canonical domain model
 - **Description:** define entities and keys: instrument (ISIN as the join key), company (one company may have several ISINs), holding (direct), scheme, fund_portfolio_snapshot (fund holdings), source_file (SHA-256, as-on date from content), and load_run. Define relationships and how month-on-month snapshots are identified.
+- **Storage principle (user decision, 2026-11-04):** store the minimal raw data and derive everything that can be calculated (for example % to AUM = value ÷ AUM, or look-through amounts). Also keep the entire raw data exactly as received, so that discrepancies between printed and calculated figures can be shown and reconciled. Printed values are stored as raw fields beside the calculated ones.
+- **Numeric columns (user decision, 2026-11-04):** percentage and value columns are typed numeric. A footnote marker such as `#` in a numeric column is stored as NULL, with the raw text kept in the raw layer.
 - **Deliverable:** domain model document with an ERD sketch (text or Mermaid).
 - **Acceptance:** every field in W2 and W4 maps to exactly one entity attribute, or is marked as out of scope.
 
@@ -188,6 +190,13 @@ Evidence: `scratch\phase1-discovery\W3-tooling\tooling_decision_record.md`. The 
 - **SOLID-driven model design:** entities are defined by responsibility; parsers and the scheme mapper are specified as interchangeable strategies.
 - **Traceability:** every catalogue row and rule cites the sample file it came from.
 - **Repeatability:** probe scripts are kept in `scratch\` and can be rerun.
+- **Locate columns by header label, within each table (W4a, 2026-11-04):** a workbook holds several tables (holdings, futures, options, swaps), and each has its own column layout. A column index taken from one table is wrong in another. Example: in SBI Contra the ISIN column is 4 in the holdings table, and the "Margin maintained" column is 8 in the futures table.
+- **Derive, do not trust, printed percentages (user decision, 2026-11-04):** calculate % to AUM or NAV as value ÷ total value, and keep the printed figure as raw for reconciliation.
+- **Keep raw as received; type the calculated fields (user decision, 2026-11-04):** store the minimum raw data plus the derived fields. Footnote markers such as `#` in numeric columns are stored as NULL, with the raw text kept.
+- **Totals are checks, not holdings:** "Sub Total" and "Total" rows are used to reconcile, never summed as holdings. The GRAND TOTAL row must equal the sum of section values exactly; check this for every workbook.
+- **Find the holding and ISIN rows by pattern, not by country prefix:** ISINs from foreign issuers start with a country code other than `IN` (for example `US`). A check that matches only `IN` drops foreign holdings.
+- **Report row numbers as Excel shows them (1-based, first row = 1):** scripts that use 0-based indexes must convert before any row is quoted.
+- **Skip Excel lock files (`~$*.xlsx`):** they appear while a workbook is open and are not inputs.
 - **Security and privacy:** no passwords, PAN numbers, email addresses, or account numbers are written into any document. Samples are redacted before quoting. Passwords live only in keyring; probe work receives the password from the user for the session and does not persist it.
 
 ## 10. Risks specific to Phase 1
