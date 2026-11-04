@@ -1,0 +1,822 @@
+[
+ {
+  "file": "Monthly_Portfolio_Axis_Midcap_Fund_30_Septemb",
+  "amc": "axis",
+  "sheet": "AXISMCF",
+  "header_row": 4,
+  "isin_col": "C",
+  "name_col": "B",
+  "qty_col": "E",
+  "value_col": "F",
+  "weight_col": "G",
+  "weight_label": "% to Net Assets",
+  "value_label": "Market/Fair Value (Rs. in Lakhs)",
+  "value_unit": "Lakhs",
+  "weight_unit": "fraction",
+  "grand_total_row": 106,
+  "holding_rows": 85,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [],
+  "as_on": "B3 text",
+  "last_used_col": "I",
+  "sheet_width": 25,
+  "section_rows": [
+   [
+    5,
+    "Equity & Equity related"
+   ],
+   [
+    95,
+    "Others"
+   ],
+   [
+    96,
+    "Mutual Fund Units"
+   ],
+   [
+    100,
+    "Reverse Repo / TREPS"
+   ]
+  ],
+  "rows_total": 132
+ },
+ {
+  "file": "Monthly_Portfolio_Axis_Small_Cap_Fund_30_Sept",
+  "amc": "axis",
+  "sheet": "AXISSCF",
+  "header_row": 4,
+  "isin_col": "C",
+  "name_col": "B",
+  "qty_col": "E",
+  "value_col": "F",
+  "weight_col": "G",
+  "weight_label": "% to Net Assets",
+  "value_label": "Market/Fair Value (Rs. in Lakhs)",
+  "value_unit": "Lakhs",
+  "weight_unit": "fraction",
+  "grand_total_row": 149,
+  "holding_rows": 128,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [],
+  "as_on": "B3 text",
+  "last_used_col": "I",
+  "sheet_width": 25,
+  "section_rows": [
+   [
+    5,
+    "Equity & Equity related"
+   ],
+   [
+    138,
+    "Money Market Instruments"
+   ],
+   [
+    139,
+    "Treasury Bill"
+   ],
+   [
+    143,
+    "Reverse Repo / TREPS"
+   ]
+  ],
+  "rows_total": 230
+ },
+ {
+  "file": "EQ - Sep 2026.xlsx",
+  "amc": "canara robeco",
+  "sheet": "EQ",
+  "header_row": 4,
+  "isin_col": "C",
+  "name_col": "B",
+  "qty_col": "E",
+  "value_col": "F",
+  "weight_col": "G",
+  "weight_label": "% to Net Assets",
+  "value_label": "Market/Fair Value (Rs. in Lacs)",
+  "value_unit": "Lacs",
+  "weight_unit": "percent",
+  "grand_total_row": 112,
+  "holding_rows": 98,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [
+   "K5",
+   "L5",
+   "M5",
+   "N5"
+  ],
+  "as_on": "B3 text",
+  "last_used_col": "N",
+  "sheet_width": 14,
+  "section_rows": [
+   [
+    5,
+    "Equity & Equity related #VALUE! #VALUE! "
+   ],
+   [
+    107,
+    "TREPS"
+   ]
+  ],
+  "rows_total": 136
+ },
+ {
+  "file": "IN - Sep 2026.xlsx",
+  "amc": "canara robeco",
+  "sheet": "IN",
+  "header_row": 4,
+  "isin_col": "C",
+  "name_col": "B",
+  "qty_col": "E",
+  "value_col": "F",
+  "weight_col": "G",
+  "weight_label": "% to Net Assets",
+  "value_label": "Market/Fair Value (Rs. in Lacs)",
+  "value_unit": "Lacs",
+  "weight_unit": "percent",
+  "grand_total_row": 65,
+  "holding_rows": 51,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [
+   "K5",
+   "L5",
+   "M5",
+   "N5"
+  ],
+  "as_on": "B3 text",
+  "last_used_col": "N",
+  "sheet_width": 14,
+  "section_rows": [
+   [
+    5,
+    "Equity & Equity related #VALUE! #VALUE! "
+   ],
+   [
+    60,
+    "TREPS"
+   ]
+  ],
+  "rows_total": 89
+ },
+ {
+  "file": "CF-Sep 2026.xlsx",
+  "amc": "invesco",
+  "sheet": "CF",
+  "header_row": 5,
+  "isin_col": "C",
+  "name_col": "B",
+  "qty_col": "E",
+  "value_col": "F",
+  "weight_col": "G",
+  "weight_label": "% to Net Assets",
+  "value_label": "Market/Fair Value (Rs. in Lakhs)",
+  "value_unit": "Lakhs",
+  "weight_unit": "percent",
+  "grand_total_row": 99,
+  "holding_rows": 71,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [],
+  "as_on": "B2 text",
+  "last_used_col": "H",
+  "sheet_width": 256,
+  "section_rows": [
+   [
+    6,
+    "Equity & Equity related"
+   ],
+   [
+    83,
+    "Derivatives"
+   ],
+   [
+    93,
+    "Money Market Instruments"
+   ],
+   [
+    94,
+    "TREPS / Reverse Repo"
+   ]
+  ],
+  "rows_total": 182
+ },
+ {
+  "file": "GF-Sep 2026.xlsx",
+  "amc": "invesco",
+  "sheet": "GF",
+  "header_row": 5,
+  "isin_col": "C",
+  "name_col": "B",
+  "qty_col": "E",
+  "value_col": "F",
+  "weight_col": "G",
+  "weight_label": "% to Net Assets",
+  "value_label": "Market/Fair Value (Rs. in Lakhs)",
+  "value_unit": "Lakhs",
+  "weight_unit": "percent",
+  "grand_total_row": 62,
+  "holding_rows": 44,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [],
+  "as_on": "B2 text",
+  "last_used_col": "H",
+  "sheet_width": 8,
+  "section_rows": [
+   [
+    6,
+    "Equity & Equity related"
+   ],
+   [
+    56,
+    "Money Market Instruments"
+   ],
+   [
+    57,
+    "TREPS / Reverse Repo"
+   ]
+  ],
+  "rows_total": 90
+ },
+ {
+  "file": "EB - Sep 2026.xlsx",
+  "amc": "mirae asset",
+  "sheet": "MAEBF",
+  "header_row": 8,
+  "isin_col": "C",
+  "name_col": "B",
+  "qty_col": "E",
+  "value_col": "F",
+  "weight_col": "G",
+  "weight_label": "% to Net Assets",
+  "value_label": "Market/Fair Value (Rs. in Lacs)",
+  "value_unit": "Lacs",
+  "weight_unit": "fraction",
+  "grand_total_row": 123,
+  "holding_rows": 84,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [],
+  "as_on": "E5 date cell",
+  "last_used_col": "I",
+  "sheet_width": 255,
+  "section_rows": [
+   [
+    9,
+    "EQUITY & EQUITY RELATED"
+   ],
+   [
+    97,
+    "DEBT INSTRUMENTS"
+   ],
+   [
+    106,
+    "MONEY MARKET INSTRUMENTS"
+   ],
+   [
+    109,
+    "OTHERS"
+   ],
+   [
+    119,
+    "Other Current Assets / (Liabilities)"
+   ],
+   [
+    149,
+    "Derivatives disclosure Table"
+   ]
+  ],
+  "rows_total": 206
+ },
+ {
+  "file": "IO - Sep 2026.xlsx",
+  "amc": "mirae asset",
+  "sheet": "MIIOF",
+  "header_row": 8,
+  "isin_col": "C",
+  "name_col": "B",
+  "qty_col": "E",
+  "value_col": "F",
+  "weight_col": "G",
+  "weight_label": "% to Net Assets",
+  "value_label": "Market/Fair Value (Rs. in Lacs)",
+  "value_unit": "Lacs",
+  "weight_unit": "fraction",
+  "grand_total_row": 113,
+  "holding_rows": 74,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [],
+  "as_on": "E5 date cell",
+  "last_used_col": "I",
+  "sheet_width": 255,
+  "section_rows": [
+   [
+    9,
+    "EQUITY & EQUITY RELATED"
+   ],
+   [
+    88,
+    "DEBT INSTRUMENTS"
+   ],
+   [
+    97,
+    "MONEY MARKET INSTRUMENTS"
+   ],
+   [
+    100,
+    "OTHERS"
+   ],
+   [
+    109,
+    "Other Current Assets / (Liabilities)"
+   ],
+   [
+    139,
+    "Derivatives disclosure Table"
+   ]
+  ],
+  "rows_total": 196
+ },
+ {
+  "file": "PF - Sep 2026.xlsx",
+  "amc": "mirae asset",
+  "sheet": "MAIPF",
+  "header_row": 8,
+  "isin_col": "C",
+  "name_col": "B",
+  "qty_col": "E",
+  "value_col": "F",
+  "weight_col": "G",
+  "weight_label": "% to Net Assets",
+  "value_label": "Market/Fair Value (Rs. in Lacs)",
+  "value_unit": "Lacs",
+  "weight_unit": "fraction",
+  "grand_total_row": 197,
+  "holding_rows": 151,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [],
+  "as_on": "E5 date cell",
+  "last_used_col": "I",
+  "sheet_width": 255,
+  "section_rows": [
+   [
+    9,
+    "EQUITY & EQUITY RELATED"
+   ],
+   [
+    99,
+    "DEBT INSTRUMENTS"
+   ],
+   [
+    176,
+    "MONEY MARKET INSTRUMENTS"
+   ],
+   [
+    187,
+    "OTHERS"
+   ],
+   [
+    193,
+    "Other Current Assets / (Liabilities)"
+   ],
+   [
+    228,
+    "Derivatives disclosure Table"
+   ]
+  ],
+  "rows_total": 289
+ },
+ {
+  "file": "GF - Sep 2026.xlsx",
+  "amc": "nippon india",
+  "sheet": "GF",
+  "header_row": 4,
+  "isin_col": "B",
+  "name_col": "C",
+  "qty_col": "E",
+  "value_col": "F",
+  "weight_col": "G",
+  "weight_label": "% to NAV",
+  "value_label": "Market/Fair Value ( Rs. in Lacs)",
+  "value_unit": "Lacs",
+  "weight_unit": "fraction",
+  "grand_total_row": 121,
+  "holding_rows": 101,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [],
+  "as_on": "B2 text",
+  "last_used_col": "H",
+  "sheet_width": 8,
+  "section_rows": [
+   [
+    5,
+    "Equity & Equity related"
+   ],
+   [
+    112,
+    "Money Market Instruments"
+   ],
+   [
+    113,
+    "Triparty Repo/ Reverse Repo Instrument"
+   ],
+   [
+    116,
+    "OTHERS"
+   ],
+   [
+    149,
+    "Derivatives disclosure Table"
+   ]
+  ],
+  "rows_total": 183
+ },
+ {
+  "file": "SC - Sep 2026.xlsx",
+  "amc": "nippon india",
+  "sheet": "SC",
+  "header_row": 4,
+  "isin_col": "B",
+  "name_col": "C",
+  "qty_col": "E",
+  "value_col": "F",
+  "weight_col": "G",
+  "weight_label": "% to NAV",
+  "value_label": "Market/Fair Value ( Rs. in Lacs)",
+  "value_unit": "Lacs",
+  "weight_unit": "fraction",
+  "grand_total_row": 275,
+  "holding_rows": 256,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [],
+  "as_on": "B2 text",
+  "last_used_col": "H",
+  "sheet_width": 8,
+  "section_rows": [
+   [
+    5,
+    "Equity & Equity related"
+   ],
+   [
+    267,
+    "Money Market Instruments"
+   ],
+   [
+    268,
+    "Triparty Repo/ Reverse Repo Instrument"
+   ],
+   [
+    271,
+    "OTHERS"
+   ],
+   [
+    300,
+    "Derivatives disclosure Table"
+   ]
+  ],
+  "rows_total": 331
+ },
+ {
+  "file": "TS - Sep 2026.xlsx",
+  "amc": "nippon india",
+  "sheet": "TS",
+  "header_row": 4,
+  "isin_col": "B",
+  "name_col": "C",
+  "qty_col": "E",
+  "value_col": "F",
+  "weight_col": "G",
+  "weight_label": "% to NAV",
+  "value_label": "Market/Fair Value ( Rs. in Lacs)",
+  "value_unit": "Lacs",
+  "weight_unit": "fraction",
+  "grand_total_row": 90,
+  "holding_rows": 62,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [],
+  "as_on": "B2 text",
+  "last_used_col": "H",
+  "sheet_width": 8,
+  "section_rows": [
+   [
+    5,
+    "Equity & Equity related"
+   ],
+   [
+    72,
+    "Debt Instruments"
+   ],
+   [
+    74,
+    "Preference Shares"
+   ],
+   [
+    82,
+    "Money Market Instruments"
+   ],
+   [
+    83,
+    "Triparty Repo/ Reverse Repo Instrument"
+   ],
+   [
+    86,
+    "OTHERS"
+   ],
+   [
+    116,
+    "Derivatives disclosure Table"
+   ]
+  ],
+  "rows_total": 148
+ },
+ {
+  "file": "SBI-CONTRA-FUND-MONTHLY-PORTFOLIO---SEPTEMBER",
+  "amc": "sbi",
+  "sheet": "SCF",
+  "header_row": 6,
+  "isin_col": "D",
+  "name_col": "C",
+  "qty_col": "F",
+  "value_col": "G",
+  "weight_col": "H",
+  "weight_label": "% to AUM",
+  "value_label": "Market value (Rs. in Lakhs)",
+  "value_unit": "Lakhs",
+  "weight_unit": "percent",
+  "grand_total_row": 165,
+  "holding_rows": 93,
+  "isin_countries": [
+   "IN",
+   "US"
+  ],
+  "error_cells": [],
+  "as_on": "C4 text",
+  "last_used_col": "L",
+  "sheet_width": 256,
+  "section_rows": [
+   [
+    8,
+    "EQUITY & EQUITY RELATED"
+   ],
+   [
+    10,
+    "Equity Shares"
+   ],
+   [
+    98,
+    "Stock Options"
+   ],
+   [
+    105,
+    "Real Estate Investment Trust"
+   ],
+   [
+    109,
+    "Foreign Securities and /or overseas ETF"
+   ],
+   [
+    116,
+    "DEBT INSTRUMENTS"
+   ],
+   [
+    122,
+    "Securitised Debt Instruments NIL NIL"
+   ],
+   [
+    130,
+    "MONEY MARKET INSTRUMENTS"
+   ],
+   [
+    131,
+    "Commercial Paper NIL NIL"
+   ],
+   [
+    133,
+    "Certificate of Deposits NIL NIL"
+   ],
+   [
+    135,
+    "Treasury Bills"
+   ],
+   [
+    147,
+    "OTHERS"
+   ],
+   [
+    148,
+    "Mutual Fund Units / Exchange Traded Fund"
+   ],
+   [
+    154,
+    "Term Deposits Placed as Margins NIL NIL"
+   ],
+   [
+    156,
+    "TREPS / Reverse Repo Investments"
+   ],
+   [
+    160,
+    "Other Current Assets / (Liabilities)"
+   ],
+   [
+    167,
+    "DERIVATIVES"
+   ]
+  ],
+  "rows_total": 284
+ },
+ {
+  "file": "SBI-HEALTHCARE-OPPORTUNITIES-FUND-MONTHLY-POR",
+  "amc": "sbi",
+  "sheet": "SHOF",
+  "header_row": 6,
+  "isin_col": "D",
+  "name_col": "C",
+  "qty_col": "F",
+  "value_col": "G",
+  "weight_col": "H",
+  "weight_label": "% to AUM",
+  "value_label": "Market value (Rs. in Lakhs)",
+  "value_unit": "Lakhs",
+  "weight_unit": "percent",
+  "grand_total_row": 97,
+  "holding_rows": 36,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [],
+  "as_on": "C4 text",
+  "last_used_col": "K",
+  "sheet_width": 256,
+  "section_rows": [
+   [
+    8,
+    "EQUITY & EQUITY RELATED"
+   ],
+   [
+    10,
+    "Equity Shares"
+   ],
+   [
+    48,
+    "Foreign Securities and /or overseas ETF "
+   ],
+   [
+    52,
+    "DEBT INSTRUMENTS"
+   ],
+   [
+    58,
+    "Securitised Debt Instruments NIL NIL"
+   ],
+   [
+    66,
+    "MONEY MARKET INSTRUMENTS"
+   ],
+   [
+    67,
+    "Commercial Paper NIL NIL"
+   ],
+   [
+    69,
+    "Certificate of Deposits NIL NIL"
+   ],
+   [
+    71,
+    "Treasury Bills"
+   ],
+   [
+    79,
+    "OTHERS"
+   ],
+   [
+    80,
+    "Mutual Fund Units / Exchange Traded Fund"
+   ],
+   [
+    86,
+    "Term Deposits Placed as Margins NIL NIL"
+   ],
+   [
+    88,
+    "TREPS / Reverse Repo Investments"
+   ],
+   [
+    92,
+    "Other Current Assets / (Liabilities)"
+   ],
+   [
+    93,
+    "Margin amount for Derivative positions N"
+   ]
+  ],
+  "rows_total": 139
+ },
+ {
+  "file": "SBI-SMALL-CAP-FUND-MONTHLY-PORTFOLIO---SEPTEM",
+  "amc": "sbi",
+  "sheet": "SSCF",
+  "header_row": 6,
+  "isin_col": "D",
+  "name_col": "C",
+  "qty_col": "F",
+  "value_col": "G",
+  "weight_col": "H",
+  "weight_label": "% to AUM",
+  "value_label": "Market value (Rs. in Lakhs)",
+  "value_unit": "Lakhs",
+  "weight_unit": "percent",
+  "grand_total_row": 126,
+  "holding_rows": 65,
+  "isin_countries": [
+   "IN"
+  ],
+  "error_cells": [],
+  "as_on": "C4 text",
+  "last_used_col": "K",
+  "sheet_width": 256,
+  "section_rows": [
+   [
+    8,
+    "EQUITY & EQUITY RELATED"
+   ],
+   [
+    10,
+    "Equity Shares"
+   ],
+   [
+    76,
+    "Foreign Securities and /or overseas ETF "
+   ],
+   [
+    80,
+    "DEBT INSTRUMENTS"
+   ],
+   [
+    86,
+    "Securitised Debt Instruments NIL NIL"
+   ],
+   [
+    94,
+    "MONEY MARKET INSTRUMENTS"
+   ],
+   [
+    95,
+    "Commercial Paper NIL NIL"
+   ],
+   [
+    97,
+    "Certificate of Deposits NIL NIL"
+   ],
+   [
+    99,
+    "Treasury Bills"
+   ],
+   [
+    108,
+    "OTHERS"
+   ],
+   [
+    109,
+    "Mutual Fund Units / Exchange Traded Fund"
+   ],
+   [
+    115,
+    "Term Deposits Placed as Margins NIL NIL"
+   ],
+   [
+    117,
+    "TREPS / Reverse Repo Investments"
+   ],
+   [
+    121,
+    "Other Current Assets / (Liabilities)"
+   ],
+   [
+    128,
+    "DERIVATIVES"
+   ]
+  ],
+  "rows_total": 230
+ }
+]

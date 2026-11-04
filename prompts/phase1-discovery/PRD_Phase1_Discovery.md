@@ -109,10 +109,11 @@ Observed variations:
 ### W4 – AMC layout catalogue
 - **Description:** one row per workbook: sheet name, header row index, column map (name, ISIN, industry, quantity, value, weight), weight unit, value unit, location of the as-on date, section markers, footnote block, and quirks.
 - **Deliverable:** AMC layout catalogue (table, one row per workbook).
-- **Status (2026-11-04):** catalogue built for all 15 workbooks, generated from the workbooks (`scratch\phase1-discovery\W4-amc-layout-catalogue\W4_catalogue.md`). Awaiting user review. The Canara `#VALUE!` addresses are K5:N5 (Excel numbering).
+- **Status (2026-11-04):** catalogue built for all 15 workbooks, generated from the workbooks (`prompts\phase1-discovery\W4-amc-layout-catalogue\W4_catalogue.md`). Needs extension before sign-off (see `RESUME.md`). Awaiting user review. The Canara `#VALUE!` addresses are K5:N5 (Excel numbering).
 - **Acceptance:** all 15 workbooks catalogued; every quirk in §4.2 is recorded against its file.
 
 ### W5 – Canonical domain model
+- **Saved to repo (2026-11-04):** `prompts\phase1-discovery\W5-domain-model\` (draft and log). Restart point and open items: `prompts\phase1-discovery\RESUME.md`.
 - **Status (2026-11-04):** draft complete (`scratch\phase1-discovery\W5-domain-model\domain_model_DRAFT.md`): 21 entities, Mermaid ERD, field mapping for every W2 and W4 field. Depends on W4, which needs extending (see its §9) before sign-off.
 - **Description:** define entities and keys: instrument (ISIN as the join key), company (one company may have several ISINs), holding (direct), scheme, fund_portfolio_snapshot (fund holdings), source_file (SHA-256, as-on date from content), and load_run. Define relationships and how month-on-month snapshots are identified.
 - **Storage principle (user decision, 2026-11-04):** store the minimal raw data and derive everything that can be calculated (for example % to AUM = value ÷ AUM, or look-through amounts). Also keep the entire raw data exactly as received, so that discrepancies between printed and calculated figures can be shown and reconciled. Printed values are stored as raw fields beside the calculated ones.
