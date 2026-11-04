@@ -113,6 +113,7 @@ Observed variations:
 - **Acceptance:** all 15 workbooks catalogued; every quirk in §4.2 is recorded against its file.
 
 ### W5 – Canonical domain model
+- **Status (2026-11-04):** draft complete (`scratch\phase1-discovery\W5-domain-model\domain_model_DRAFT.md`): 21 entities, Mermaid ERD, field mapping for every W2 and W4 field. Depends on W4, which needs extending (see its §9) before sign-off.
 - **Description:** define entities and keys: instrument (ISIN as the join key), company (one company may have several ISINs), holding (direct), scheme, fund_portfolio_snapshot (fund holdings), source_file (SHA-256, as-on date from content), and load_run. Define relationships and how month-on-month snapshots are identified.
 - **Storage principle (user decision, 2026-11-04):** store the minimal raw data and derive everything that can be calculated (for example % to AUM = value ÷ AUM, or look-through amounts). Also keep the entire raw data exactly as received, so that discrepancies between printed and calculated figures can be shown and reconciled. Printed values are stored as raw fields beside the calculated ones.
 - **Numeric columns (user decision, 2026-11-04):** percentage and value columns are typed numeric. A footnote marker such as `#` in a numeric column is stored as NULL, with the raw text kept in the raw layer.
