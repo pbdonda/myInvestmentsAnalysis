@@ -109,6 +109,7 @@ Observed variations:
 ### W4 – AMC layout catalogue
 - **Description:** one row per workbook: sheet name, header row index, column map (name, ISIN, industry, quantity, value, weight), weight unit, value unit, location of the as-on date, section markers, footnote block, and quirks.
 - **Deliverable:** AMC layout catalogue (table, one row per workbook).
+- **Status (2026-11-04):** catalogue built for all 15 workbooks, generated from the workbooks (`scratch\phase1-discovery\W4-amc-layout-catalogue\W4_catalogue.md`). Awaiting user review. The Canara `#VALUE!` addresses are K5:N5 (Excel numbering).
 - **Acceptance:** all 15 workbooks catalogued; every quirk in §4.2 is recorded against its file.
 
 ### W5 – Canonical domain model
