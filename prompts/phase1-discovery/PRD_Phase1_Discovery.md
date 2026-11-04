@@ -167,6 +167,21 @@ Evidence: `scratch\phase1-discovery\W3-tooling\tooling_decision_record.md`. The 
 | W3-7 | Sequence W3 → W4a → W4 → W5 | Decided |
 | L1 | PyMuPDF AGPL licence (private use only) | Accepted by user |
 
+### 6.2 Fund workbook decisions (W4a, accepted 2026-11-04)
+Evidence: `scratch\phase1-discovery\W4a-fund-workbook-probe\W4a_log.md` and `W4a_results.md` (scratch, not committed). The general rules are in §9.
+
+| ID | Decision | Status |
+|---|---|---|
+| W4a-1 | Detect header row, ISIN, weight and value columns by label, within each table | Accepted |
+| W4a-2 | Read the weight unit per workbook from its grand total row, then normalise to percent | Accepted |
+| W4a-3 | Use openpyxl with error cells kept as errors (pandas hides them as NaN) | Accepted |
+| W4a-4 | Exclude derivative and hedging tables from weight sums; keep their rows raw | Accepted |
+| W4a-5 | Use the primary as-on date, read by cell type | Accepted |
+| W4a-6 | Flag INF-ISIN rows as nested fund units (D9) | Accepted |
+| W4a-7 | Do not record holding names or per-holding values in documents | Accepted |
+| W4a-8 | Holding identifiers: validate an ISIN by format (12 characters, two-letter country code, 9 alphanumeric characters, one check digit). Do not match on `IN` alone; foreign (for example `US`) and fund (`INF`) ISINs are valid holdings | Accepted (correcting an earlier working assumption that ISINs start with `IN`) |
+| W4a-9 | Calculated percentages (value ÷ total) are the stored figures; printed percentages are kept as raw for reconciliation | Accepted (user decision, SBI Contra and Small Cap) |
+
 ## 7. Deliverables of Phase 1
 1. Data dictionary (CAS sections and fields, nine months) – W2
 2. AMC layout catalogue (15 workbooks) – W4
