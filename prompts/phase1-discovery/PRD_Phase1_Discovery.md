@@ -190,11 +190,15 @@ Evidence: `scratch\phase1-discovery\W3-tooling\tooling_decision_record.md`. The 
 - **SOLID-driven model design:** entities are defined by responsibility; parsers and the scheme mapper are specified as interchangeable strategies.
 - **Traceability:** every catalogue row and rule cites the sample file it came from.
 - **Repeatability:** probe scripts are kept in `scratch\` and can be rerun.
-- **Locate columns by header label, within each table (W4a, 2026-11-04):** a workbook holds several tables (holdings, futures, options, swaps), and each has its own column layout. A column index taken from one table is wrong in another. Example: in SBI Contra the ISIN column is 4 in the holdings table, and the "Margin maintained" column is 8 in the futures table.
-- **Derive, do not trust, printed percentages (user decision, 2026-11-04):** calculate % to AUM or NAV as value ÷ total value, and keep the printed figure as raw for reconciliation.
+Rules for every mutual fund portfolio report (all AMCs, all months). Examples are evidence from the samples; the rules are not specific to any one AMC.
+
+- **Locate columns by header label, within each table:** a workbook holds several tables (holdings, futures, options, swaps, and so on), and each table has its own column layout. Never use one column index for the whole sheet. Evidence: in the SBI Contra workbook the ISIN column is 4 in the holdings table, and "Margin maintained" is column 8 in the futures table.
+- **Only holdings-table rows become holdings:** hedging, option and swap tables are kept as raw data, never read as holdings or weights. Evidence: the large numbers in some workbooks come from "Margin" and "Quantity" columns in those tables.
+- **Derive, do not trust, printed percentages (user decision, 2026-11-04):** calculate % to AUM or NAV as value ÷ total value, and keep the printed figure as raw for reconciliation. Evidence: SBI Contra and SBI Small Cap each have two sections where printed and calculated figures differ by about 0.04 points.
 - **Keep raw as received; type the calculated fields (user decision, 2026-11-04):** store the minimum raw data plus the derived fields. Footnote markers such as `#` in numeric columns are stored as NULL, with the raw text kept.
-- **Totals are checks, not holdings:** "Sub Total" and "Total" rows are used to reconcile, never summed as holdings. The GRAND TOTAL row must equal the sum of section values exactly; check this for every workbook.
-- **Find the holding and ISIN rows by pattern, not by country prefix:** ISINs from foreign issuers start with a country code other than `IN` (for example `US`). A check that matches only `IN` drops foreign holdings.
+- **Totals are checks, not holdings:** "Sub Total" and "Total" rows are used to reconcile and are never summed as holdings. The GRAND TOTAL must equal the sum of its section values exactly, and this is checked for every workbook.
+- **Identify holdings by ISIN pattern, not by country prefix:** ISINs are 12 characters with a two-letter country code, which varies (`IN`, `US`, `INF` and others). A check on `IN` alone drops foreign and fund holdings.
+- **Read the unit from the workbook, per workbook:** weight is a fraction or a percentage depending on the workbook (eight fraction, seven percentage in the samples). Confirm it from the grand total row, not from the AMC name or the header label.
 - **Report row numbers as Excel shows them (1-based, first row = 1):** scripts that use 0-based indexes must convert before any row is quoted.
 - **Skip Excel lock files (`~$*.xlsx`):** they appear while a workbook is open and are not inputs.
 - **Security and privacy:** no passwords, PAN numbers, email addresses, or account numbers are written into any document. Samples are redacted before quoting. Passwords live only in keyring; probe work receives the password from the user for the session and does not persist it.
